@@ -4,8 +4,8 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": ["custom/weather", "custom/omarchy", "hyprland/workspaces"],
-  "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
+  "modules-center": ["clock", "custom/weather", "custom/update", "custom/voxtype", "custom/screenrecording-indicator", "custom/idle-indicator", "custom/notification-silencing-indicator"],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -173,8 +173,7 @@
   },
   "custom/weather": {
     "exec": "~/.config/waybar/scripts/weather.sh",
-    "interval": 3600,
-    "format": " {}",
-    "tooltip": false
+    "interval": 600,
+    "return-type": "json"
   }
 }
