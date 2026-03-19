@@ -19,5 +19,5 @@ i am currently using the softteal theme: https://github.com/atif-1402/omarchy-so
 # preview:
 
 <p align="center">
-  <img src="prewview.png" width="700" alt="desktop">
+  <img src="preview.png" width="700" alt="desktop">
 </p>
