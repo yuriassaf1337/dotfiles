@@ -8,8 +8,3 @@ personal omarchy cfg (hypr + waybar)
 sudo pacman -S stow
 ```
 
-```
-```
-```
-```
-```
