@@ -70,8 +70,8 @@
       "(.*) - Obsidian - .* - obsidian": "  $1 ",
       "(.*nvim)...(.*)": "  $2 ",
       "(.*code) - (.*)": " 󰨞 $1 ",
-      "^.*btop( .*|$)": " 󰧨  BTOP $1 ",
-      "^.*cmatrix( .*|$)": " 󰘨  MATRIX $1 ",
+      "^.*btop( .*|$)": " 󰧨  btop $1 ",
+      "^.*cmatrix( .*|$)": " 󰘨  matrix $1 ",
       "(.*) - Spotify": "   $1 ",
       "(.*) - com.mitchellh.ghostty": " 󰊠 $1 ",
       "(.*) - Alacritty": "   $1 ",
@@ -81,14 +81,14 @@
       "(.*) - fish": "   [$1] ",
       "(.*Steam)...(.*)": " $1",
       "(.*imv)...(.*).. (.*)": "  $2",
-      "(.*) - com.obsproject.Studio": "  $1 "
+      "(.*) - com.obsproject.Studio": "   $1 "
     }
   },
   "custom/omarchy": {
     "format": "󰣇 ",
     "on-click": "omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
+    "tooltip-format": "main menu\n\nSuper + Alt + Space"
   },
   "custom/update": {
     "format": "",
@@ -201,9 +201,9 @@
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰤮",
-    "tooltip-format-wifi": "{essid} ({frequency} GHz)",
-    "tooltip-format-ethernet": "Connected",
-    "tooltip-format-disconnected": "Disconnected",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\ndown: ⇣{bandwidthDownBytes}\nup: ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "connected\ndown: ⇣{bandwidthDownBytes}\nup: ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "disconnected",
     "interval": 3,
     "spacing": 1,
     "on-click": "omarchy-launch-wifi"
