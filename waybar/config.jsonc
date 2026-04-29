@@ -23,7 +23,7 @@
     "hyprland/window"
   ],
   "modules-right": [
-    // "group/tray-expander",
+    "tray",
     "custom/updatespacman",
     "idle_inhibitor",
     "backlight",
@@ -84,6 +84,13 @@
       "(.*) - com.obsproject.Studio": "   $1 "
     }
   },
+  //"custom/mic-mute": {
+  //  "exec": "~/.config/waybar/mic-mute.sh",
+  //  "return-type": "json",
+  //  "interval": 2,
+  //  "signal": 11,
+  //  "tooltip": true
+  //},
   "custom/omarchy": {
     "format": "󰣇 ",
     "on-click": "omarchy-menu",
@@ -169,15 +176,16 @@
   // },
   "clock": {
     "format": "{:%d/%m %H:%M}",
-    "tooltip-format": "<span>{calendar}</span>",
+    "tooltip-format": "<tt><span size='115%'>{calendar}</span></tt>",
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
       "on-click-right": "mode",
       "format": {
-        "month": "<span color='#ffead3'><b>{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b>{}</b></span>"
+        "month": "<span color='#ffffff'><b>{}</b></span>",
+        "weekdays": "<span color='#A8A39E'><b>{}</b></span>",
+        "days": "<span color='#ffffff'>{}</span>",
+        "today": "<span color='#1A1815' background='#558D83'><b> {} </b></span>"
       }
     },
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"

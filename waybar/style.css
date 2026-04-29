@@ -109,16 +109,12 @@ window#waybar {
   font-size: 12px;
 }
 
-#custom-expand-icon {
-  margin-right: 12px;
+#tray {
+  min-width: 0;
 }
 
 #custom-update {
   margin-left: 0px;
-}
-
-tooltip {
-  padding: 2px;
 }
 
 .hidden {
@@ -174,15 +170,49 @@ tooltip {
 }
 
 tooltip {
-  border-radius: 0px;
-  padding: 4px;
+  border-radius: 8px;
+  padding: 10px 12px;
   background: @background;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid @accent;
   font-size: 12px;
 }
 
 tooltip label {
   color: @foreground;
+  font-family: 'CaskaydiaMono Nerd Font Propo';
+  font-size: 13px;
+  padding: 2px 4px;
+}
+
+tooltip calendar {
+  background: transparent;
+  color: @foreground;
+  border: none;
+  padding: 6px;
+}
+
+tooltip calendar.header {
+  color: @foreground;
+  font-weight: 700;
+}
+
+tooltip calendar.button {
+  color: @accent;
+}
+
+tooltip calendar.highlight {
+  color: @hover;
+  font-weight: 700;
+}
+
+tooltip calendar:selected {
+  background: @accent;
+  color: @background;
+  border-radius: 6px;
+}
+
+tooltip calendar:indeterminate {
+  color: alpha(@foreground, 0.35);
 }
 
 #mpris {
